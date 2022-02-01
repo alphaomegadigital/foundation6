@@ -5271,4 +5271,10 @@ ul.accordion.custom.minimal li.accordion-item {
   li {
     color: #888888;
   }
+  @media print, screen and (max-width: 63.99875em) {
+.home-page-hero .heading h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+  } 
 /*# sourceMappingURL=style.css.map */
