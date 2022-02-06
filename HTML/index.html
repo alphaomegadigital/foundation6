@@ -610,8 +610,26 @@
 
 				<!-- Testimonials Section -->
 				<br></br>
+				<div id="widgetContainer"></div>
 				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-				<div class="elfsight-app-f982e93a-9e04-45db-a01f-4f3d60866540"></div>
+				<script>
+					function inViewport(element){
+					  const bb = element.getBoundingClientRect();
+					  return !(bb.top > innerHeight || bb.bottom < 0);
+					}
+					
+					let widgetVisible = false;
+					const widgetContainer = document.querySelector('#widgetContainer');
+					
+					document.addEventListener('scroll', event => {
+					  if (inViewport( widgetContainer ) && !widgetVisible){
+						widgetVisible = true;
+						const wiget = document.createElement('div');
+						wiget.className = "elfsight-app-f982e93a-9e04-45db-a01f-4f3d60866540";
+						widgetContainer.append(wiget);
+					  }
+					});
+				</script>
 
 			<!-- Pricing Table -->
 			<section id="tickets" class="price gradient-a-95 angle-edge-top-right-bottom-right" data-magellan-target="tickets">
