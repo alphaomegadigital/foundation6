@@ -37,7 +37,7 @@ section.teaser {
 			font-weight: 700;
 		}
 		h2 {
-			font-size: 1.25rem; 
+			font-size: 2rem; 
 		}
 		h3 {
 			font-size: 1.2rem; 
@@ -95,6 +95,7 @@ section.teaser {
 	background-size: cover;
 	background-position: center;
 	color: white;
+	font-size: 60px!important;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -180,8 +181,9 @@ section.teaser {
 		}
 
 		h2 {
-			font-size: 1.25rem; 
+			font-size: 1.75rem; 
 		}
+	
 	}
 
 
@@ -215,11 +217,14 @@ section.teaser {
 	@include breakpoint(medium down) {
 		.heading {
 			h1 {
-				font-size: 1.75rem;
+				font-size: 2.75rem;
 				font-weight: 700;
+				padding-bottom: 50px;
+				margin-top: -80px;
 			}
 			h2 {
-				font-size: 0.75rem;
+				font-size: 1.5rem;
+				padding: 30px;
 			}
 		}
 		.action {
