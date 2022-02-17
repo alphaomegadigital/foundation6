@@ -1431,7 +1431,8 @@ svg #Black path {
   @media screen and (max-width: 39.9375em) {
     #top-main-menu {
       float: none;
-      background: #000;
+      background: #6C4CB4;
+      border-radius: 10px;
       padding: 20px; }
       #top-main-menu > li {
         float: none;
